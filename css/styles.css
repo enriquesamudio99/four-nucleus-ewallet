@@ -311,6 +311,14 @@ img {
     border-radius: .5rem;
 }
 
+@media (min-width: 768px) {
+    .list__item--2col {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 .list__item:hover {
     transform: scale(1.05);
 }
@@ -332,6 +340,32 @@ img {
         font-size: 2rem;
     }
 }
+
+.list__number {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+@media (min-width: 768px) {
+    .list__number {
+        font-size: 2rem;
+        text-align: right;
+        margin-right: .75rem;
+    }
+}
+
+.list__text {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .list__text {
+        font-size: 1.125rem;
+    }
+}
+
 
 /* Security */
 .security {
@@ -404,3 +438,63 @@ img {
     }
 }
 
+/* Commisions */
+.commissions {
+    padding: var(--gutter) 0 0;
+}
+
+.commissions__heading {
+    margin-bottom: var(--gutter);
+    text-align: center;
+}
+
+.commissions__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .commissions__grid {
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 0;
+    }
+}
+
+.commissions__text {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: calc(var(--gutter) / 2);
+}
+
+@media (min-width: 768px) {
+    .commissions__text {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+}
+
+.commissions__image {
+    width: 240px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .commissions__image {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .commissions__image {
+        width: 320px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .commissions__image {
+        width: 340px;
+    }
+}
