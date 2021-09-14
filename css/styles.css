@@ -335,8 +335,30 @@ img {
 
 /* Security */
 .security {
-    padding: var(--gutter) 0;
+    padding: calc(var(--gutter) * 4) 0;
     background-color: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.security::before,
+.security::after {
+    content: "";
+    background-color: var(--white);
+    width: 130%;
+    height: 200px;
+    position: absolute;
+}
+
+.security::before {
+    top: -100px;
+    transform: rotate(3deg);
+}
+
+.security::after {
+    left: -100px;
+    bottom: -100px;
+    transform: rotate(3deg);
 }
 
 .security__title {
