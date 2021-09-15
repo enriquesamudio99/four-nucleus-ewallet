@@ -567,15 +567,10 @@ img {
     }
 }
 
-.footer__grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 @media (min-width: 768px) {
     .footer__grid {
-        flex-direction: row;
+        display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 }
