@@ -223,6 +223,10 @@ img {
     font-weight: 500;
 }
 
+.nav__link--white {
+    color: var(--white);
+}
+
 .nav__link:last-of-type {
     margin-bottom: 0;
 }
@@ -544,4 +548,34 @@ img {
     color: var(--primary);
     font-weight: 700;
     text-align: right;
+}
+
+/* Footer */
+.footer {
+    padding: var(--gutter) 0;
+    background-color: #5a30a0;
+}
+
+.footer__logo {
+    width: 200px;
+    margin: 0 auto 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer__logo {
+        margin: 0;
+    }
+}
+
+.footer__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
